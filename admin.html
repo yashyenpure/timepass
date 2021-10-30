@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Admin</title>
+    <style>
+        .btn{
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+        .table{
+            text-align: center;
+        }
+        .table{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+  <nav class="bg-gray-800">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Heroicon name: outline/menu
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Heroicon name: outline/x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex-1 flex items-center justify-center sm:items-s<h1>Admin</h1>tretch sm:justify-start">
+        <h1 class="text-white">Admin</h1>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex flex-end items-right  space-x-4">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" style=" padding-left: 100px;" class="bg-gray-900 flex-end text-white px-3 py-2  rounded-md text-sm font-medium" aria-current="page">Sign out</a>
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        
+
+        <!-- Profile dropdown -->
+        
+
+          <!--
+            Dropdown menu, show/hide based on menu state.
+
+            Entering: "transition ease-out duration-100"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+          -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+    </div>
+  </div>
+</nav>
+
+  <h5>Branch : Computer Engineering </h5>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Percentile</th>
+      <th scope="col">12th Percentage</th>
+      <th scope="col">10th Percentage</th>
+      <th scope="col">Board</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Rohan Singhania</th>
+      <td>98</td>
+      <td>95</td>
+      <td>96</td>
+      <td>CBSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+    <tr>
+      <th scope="row">Anand Patil</th>
+      <td>92</td>
+      <td>96</td>
+      <td>88</td>
+      <td>SSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+    <tr>
+      <th scope="row">Harsh Rana</th>
+      <td>87</td>
+      <td>88</td>
+      <td>92</td>
+      <td>SSE</td>
+      <td><button class="btn">Contact</button></td>
+
+    </tr>
+  </tbody>
+</table>
+<br>
+<h5>Branch : IT </h5>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Percentile</th>
+      <th scope="col">12th Percentage</th>
+      <th scope="col">10th Percentage</th>
+      <th scope="col">Board</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Rohan Singhania</th>
+      <td>98</td>
+      <td>95</td>
+      <td>96</td>
+      <td>CBSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<h5>Branch : ENTC </h5>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Percentile</th>
+      <th scope="col">12th Percentage</th>
+      <th scope="col">10th Percentage</th>
+      <th scope="col">Board</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Rohan Singhania</th>
+      <td>98</td>
+      <td>95</td>
+      <td>96</td>
+      <td>CBSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+<h5>Branch : Mechanical Engineering </h5>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Percentile</th>
+      <th scope="col">12th Percentage</th>
+      <th scope="col">10th Percentage</th>
+      <th scope="col">Board</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Rohan Singhania</th>
+      <td>98</td>
+      <td>95</td>
+      <td>96</td>
+      <td>CBSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+    <tr>
+      <th scope="row">Sanket Chaudhary</th>
+      <td>78</td>
+      <td>82</td>
+      <td>84</td>
+      <td>SSE</td>
+      <td><button class="btn">Contact</button></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
